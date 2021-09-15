@@ -1,12 +1,19 @@
 var w = window.innerWidth,
   h = window.innerHeight,
   canvas = document.querySelector("canvas");
+if(screen.width >=1025)
+  {
+    s = 0.5;
+  }
+  else {
+    s = 2;
+  }
 (ctx = canvas.getContext("2d")),
   (rate = 50),
   (arc = 250),
   (time = 0),
   (count = 0),
-  (size = 2),
+  (size = s),
   (speed = 10),
   (lights = []),
   (colors = ["hsl(60, 100%, 69%)"]),
